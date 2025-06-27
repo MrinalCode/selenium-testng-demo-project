@@ -69,4 +69,7 @@ public class TestBase {
 		driver.close();
 		driver.quit();
 	}
+        public int test(){
+             return 0;
+        }
 }
