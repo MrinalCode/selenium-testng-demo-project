@@ -70,6 +70,6 @@ public class TestBase {
 		driver.quit();
 	}
         public int test(){
-             return 0;
+             return 1;
         }
 }
