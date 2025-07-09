@@ -1,13 +1,7 @@
 pipeline {
     agent 
      { label 'JDK17' } 
-    
-    environment{
-      
-     GOAL: 'clean package'
-
-    }
-
+   
     stages {
       stage('clone the code'){
         steps{
@@ -17,7 +11,7 @@ pipeline {
 
       stage('build the code'){
         steps{
-          sh "mvn $GOAL"
+          sh "mvn clean package"
         }
       }
       
