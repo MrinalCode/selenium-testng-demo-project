@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'JDK17' }
    
     stages {
       stage('clone the code'){
