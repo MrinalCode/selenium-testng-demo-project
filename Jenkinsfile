@@ -1,12 +1,7 @@
 pipeline {
     agent { label 'JDK17' }
    
-    stages {
-      stage('clone the code') {
-         steps {
-        git branch: 'main', url: 'https://github.com/MrinalCode/selenium-testng-demo-project.git'
-       }
-     } 
+    stages { 
 
       stage('build the code'){
         steps{
